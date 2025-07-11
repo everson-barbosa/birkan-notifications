@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { Either, left, right } from 'src/core/either';
 import { NotAllowedError } from 'src/core/errors/use-cases/not-allowed.error';
 import { ResourceNotFoundError } from 'src/core/errors/use-cases/resource-not-found.error';
-import { NotificationsRepository } from 'src/database/repositories/notifications.repository';
-import { Notification } from 'src/entities/notification.entity';
+import { Notification } from '../../enterprise/entities/notification.entity';
+import { NotificationsRepository } from '../repositories/notifications.repository';
 
 interface ReadNotificationUseCaseRequest {
   recipientId: string;

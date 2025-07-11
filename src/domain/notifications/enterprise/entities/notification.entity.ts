@@ -10,6 +10,8 @@ interface NotificationProps {
   readedAt: Date | null;
 }
 
+export type NotificationPaginationParams = keyof NotificationProps;
+
 export class Notification extends Entity<NotificationProps> {
   get recipientId() {
     return this.props.recipientId;

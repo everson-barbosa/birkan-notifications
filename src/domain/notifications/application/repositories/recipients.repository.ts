@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Recipient } from 'src/entities/recipient.entity';
+import { Recipient } from '../../enterprise/entities/recipient.entity';
 
 @Injectable()
 export abstract class RecipientsRepository {
